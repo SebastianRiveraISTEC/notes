@@ -8,7 +8,7 @@ void ex4();
 void ex5();
 
 int main(){
-	ex4();
+	ex1();
 
 	return 0;
 }
@@ -73,9 +73,9 @@ void ex4(){
 void ex5(){
 	int aux = 0;
 	int x,y;
-	cout<<"Loop numero: "<< aux<<endl;
-	aux++;
 	for(x=1,y=2;x<4;x++){
+		cout<<"Loop numero: "<< aux<<endl;
+		aux++;
 		cout<<"Inicio do loop:\t"<<"y: "<<y<<"\t"<<"x: "<<x<<endl;
 	    switch(x){
 	        case 1:
