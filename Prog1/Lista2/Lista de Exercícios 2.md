@@ -68,7 +68,7 @@ int main(){
 }
 ```
 
-![image-20221117124637183](/home/sebastian/.config/Typora/typora-user-images/image-20221117124637183.png)
+![image-20221117124637183](./src/image-20221117124637183.png)
 
 ​	Resposta: e) x = -33, y = 11, z = 11
 
@@ -86,7 +86,7 @@ return 1;//não havia espaço entre return e 1
 
 ### Exercício 7
 
-![image-20221116163836880](/home/sebastian/.config/Typora/typora-user-images/image-20221116163836880.png)
+![image-20221116163836880](./src/image-20221116163836880.png)
 
 ```c
 #include <stdio.h>
@@ -102,7 +102,7 @@ printf("Os números são: %d, %d e %d\n",a,b,c);
 
 ### Exercício 8
 
-![image-20221116164034288](/home/sebastian/.config/Typora/typora-user-images/image-20221116164034288.png)
+![image-20221116164034288](./src/image-20221116164034288.png)
 
 ### Exercício 9
 
@@ -174,11 +174,11 @@ printf("a = %d\nb = %d\nc = %d\nd = %d\ne = %d\nf = %d\n",a,b,c,d,e,f);
 }
 ```
 
-![image-20221116164311467](/home/sebastian/.config/Typora/typora-user-images/image-20221116164311467.png)
+![image-20221116164311467](./src/image-20221116164311467.png)
 
 ### Exercício 15
 
-![image-20221116164433740](/home/sebastian/.config/Typora/typora-user-images/image-20221116164433740.png)
+![image-20221116164433740](./src/image-20221116164433740.png)
 
 ​											Resposta: 12500
 
