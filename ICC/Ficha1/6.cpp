@@ -17,7 +17,6 @@ int main(){
 	int number;
 	cout<<"Numero: ";
 	cin>>number;
-	cout<<"O numero "<<number<<" invertido e "<<invertir(number)<<endl;
-
+	if(number>=100 && number=<999)cout<<"O numero "<<number<<" invertido e "<<invertir(number)<<endl;
 	return 0;
 }

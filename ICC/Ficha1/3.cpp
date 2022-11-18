@@ -10,7 +10,7 @@ int somaNPrimeiros(int n){
 	return aux;
 }
 
-int main(){
+int main(){	
 	int number;
 	cout<<"Numero: ";
 	cin>>number;
