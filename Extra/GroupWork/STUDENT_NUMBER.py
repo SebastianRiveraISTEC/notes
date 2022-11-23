@@ -99,3 +99,35 @@ def createSimulations(times, mats):
         results[i] /= times
     
     return simulations,results
+
+
+
+
+##################
+# TESTS
+
+# These results must be the same as in the document
+# a) 
+xaxis = range(1997, 2021)
+yaxis = [coefs[year][1, 0] for year in range(2021-1997)]
+# plt.plot(xaxis, yaxis)
+
+# b)
+np.round(leon(coef(1997)), 2)[:3, :3]
+highest_impact(coef(1997))
+
+# c)
+round(minaij(coefs, 1, 0), 2), round(maxaij(coefs, 1, 0), 2)
+
+# After this point, all of the results depend on randomized numbers so the answer will be different to the document
+# You can run the following tests multiple times and you will realize that the results may be different each time
+
+np.round(simA(coefs), 2)[:3, :3]
+highest_impact(simA(coefs))
+
+# d)
+# The function createSimulations() creates the list which the following tests depend on
+# These tests will yield the same result until you run createSimulations again
+len(simulations)
+simulations[:10]
+results

@@ -1,16 +1,24 @@
 #include <stdio.h>
 
-int main(){
-	int x,y,z;
+int main(int argc, char *argv[]){
+	int n1, n2,n3, x, y;
+	printf("Digite 3 valores inteiros:\n");
+	scanf("%d %d %d", &n1, &n2, &n3);
 
-	x = y = 10;
-	z = x + 1;
-	x = -x;
-	y = y + 1;
-	x = x + y - (z + 1) - 2 * y;
+	float media = (n1+n2+n3)/3;
+	
+	printf("A media dos numeros e %.2f\n", media);
 
-	printf("x = %d, y = %d, z = %d\n",x,y,z);
+	printf("Digite 2 valores inteiros:\n");
+	scanf("%d %d", &x, &y);
+
+	if(x>y){
+		printf("x e maior que y\n");
+		printf("%.2f\n", x*media);
+	}else{
+		printf("y e maior que x\n");
+		printf("%.2f\n", y*media);
+	}
 
 	return 0;
 }
-
