@@ -100,6 +100,7 @@ def createSimulations(times, mats):
     
     return simulations,results
 
+simulations,results = createSimulations(10000,coefs)
 
 
 
