@@ -1,0 +1,177 @@
+{
+  "main": {
+    "id": "6671e4bfef2fd71c",
+    "type": "split",
+    "children": [
+      {
+        "id": "a23d277d53f3fac2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d4858a4dd70be293",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "AC/Ficha1.md",
+                "mode": "source",
+                "source": true
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "c52ddd46c05cdf3b",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0f67307ab924f618",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Test.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3015229b77b3127a",
+    "type": "split",
+    "children": [
+      {
+        "id": "153588b80ebb7c89",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0ae86a38bc7ddb10",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "6db369c0b61f3b51",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c47b0babfed516e1",
+    "type": "split",
+    "children": [
+      {
+        "id": "2fa1707f394f1894",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "17e266ecd0fdf309",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Test.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d353ba1239a1a254",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Test.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "ba37737327bc8bed",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "90f2ed089a5a7496",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Test.md"
+              }
+            }
+          },
+          {
+            "id": "733c63b0ffbb1e95",
+            "type": "leaf",
+            "state": {
+              "type": "calendar",
+              "state": {}
+            }
+          },
+          {
+            "id": "b6db7a99e587fdfb",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {}
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "active": "0f67307ab924f618",
+  "lastOpenFiles": [
+    "AC/Ficha1.md",
+    "Test.md",
+    "AC/Ficha 2.md",
+    "Matematicas/24-nov.md",
+    "Matematicas/Aula2.md",
+    "Matematicas/10-nov.md",
+    "Matematicas/17-nov.md",
+    "01-12-22.md",
+    "02-12-22.md"
+  ]
+}
