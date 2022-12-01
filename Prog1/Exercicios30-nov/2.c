@@ -18,6 +18,7 @@ double div(int x, int y){
 }
 
 double fatorial(int x){
+	if(x == 0) return 1;
 	double aux = 1;
 	for(int i = 2; i<=x;i++){
 		aux*=i;
