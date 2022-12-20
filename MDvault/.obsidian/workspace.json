@@ -4,24 +4,6 @@
     "type": "split",
     "children": [
       {
-        "id": "a23d277d53f3fac2",
-        "type": "tabs",
-        "children": [
-          {
-            "id": "d4858a4dd70be293",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "AC/Ficha1.md",
-                "mode": "source",
-                "source": true
-              }
-            }
-          }
-        ]
-      },
-      {
         "id": "c52ddd46c05cdf3b",
         "type": "tabs",
         "children": [
@@ -36,8 +18,33 @@
                 "source": false
               }
             }
+          },
+          {
+            "id": "4f08f22b06d2dfd5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Test.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "f6d85aad6544c2f3",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -95,7 +102,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Test.md",
+                "file": "Untitled.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -112,7 +119,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Test.md",
+                "file": "Untitled.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -135,7 +142,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Test.md"
+                "file": "Untitled.md"
               }
             }
           },
@@ -162,9 +169,10 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "0f67307ab924f618",
+  "active": "f6d85aad6544c2f3",
   "lastOpenFiles": [
     "AC/Ficha1.md",
+    "Untitled.md",
     "Test.md",
     "AC/Ficha 2.md",
     "Matematicas/24-nov.md",
