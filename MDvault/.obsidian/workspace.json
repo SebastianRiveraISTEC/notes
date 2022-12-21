@@ -45,6 +45,24 @@
           }
         ],
         "currentTab": 2
+      },
+      {
+        "id": "295994436b802e49",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "3f257e5bda0d0779",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
       }
     ],
     "direction": "vertical"
@@ -86,7 +104,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "c47b0babfed516e1",
@@ -169,12 +188,12 @@
     "direction": "horizontal",
     "width": 300
   },
-  "active": "f6d85aad6544c2f3",
+  "active": "0ae86a38bc7ddb10",
   "lastOpenFiles": [
-    "AC/Ficha1.md",
-    "Untitled.md",
-    "Test.md",
     "AC/Ficha 2.md",
+    "Untitled.md",
+    "AC/Ficha1.md",
+    "Test.md",
     "Matematicas/24-nov.md",
     "Matematicas/Aula2.md",
     "Matematicas/10-nov.md",
