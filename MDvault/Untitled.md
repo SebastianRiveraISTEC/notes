@@ -35,7 +35,7 @@ por elas durante o tempo da sua execução.
 Ao longo da sua execução a tarefa vai sendo associada a diversas
 **atividades**, uma de cada vez.
 Cada atividade executa uma operação específica correspondente a uma coluna
-na representação *kanban*.
+na representação *kanban*. 
 O tempo total de execução de uma tarefa deve ser contabilizado para poder
 ser comparado com o tempo inicialmente previsto.
 Assim, pode-se determinar atrasos na execução do projeto na sua totalidade
