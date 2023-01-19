@@ -1,0 +1,4 @@
+banana 15 10
+maca 5 20
+uva 10 5
+pera 3.5 4
