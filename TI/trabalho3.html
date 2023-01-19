@@ -8,51 +8,124 @@
     <body>
         <div id="box">
             <form>
-                <input type="number" class="nums a">
-                <select class="nums op">
-                    <option value="add">+</option>
-                    <option value="sus">-</option>
-                    <option value="div">/</option>
-                    <option value="mult">*</option>
-                </select>
-                <input type="number" class="nums b">
-                <input type="button" class="button" value="Calcular" onclick="test()">
+                <input type="number" class="numsX" placeholder="x" oninput="updateX">
+                <input type="number" class="numsY" placeholder="y" oninput="updateY">
             </form>
+                <div class="btn-group">
+                    <button id="add" onclick="buttonClick(this.id)" class = "btn active">+</button>
+                    <button id="sus" onclick="buttonClick(this.id)" class = "btn">-</button>
+                    <button id="div" onclick="buttonClick(this.id)" class = "btn">/</button>
+                    <button id="mult" onclick="buttonClick(this.id)" class = "btn">*</button>
+                    <button id="sqr" onclick="buttonClick(this.id)" class = "btn">^</button>
+                    <button id="sqrt" onclick="buttonClick(this.id)" class = "btn">√</button>
+                    <button id="mod" onclick="buttonClick(this.id)" class = "btn">mod</button>
+                <div>
             <div class="ansBox">
-                <a>Resposta=</a>
-                <a id="ans"></a>
+                <a>Resposta :</a>
+                <a id="ansX">x</a>
+                <a id="ansOP">_</a>
+                <a id="ansY">y</a>
+                <a>=</a>
+                <a id="ans"> ? </a>
             </div>
         </div>
     </body>
     <style>
-        .nums,.button{
-            font-size: 48px;
+        .box{
+        }
+        .nums,.btn-group{
         }
         .ansBox{
-            display: inline-block;
-            font-size: 36px;
-            border: 1px solid black;
         }
     </style>
     <script>
-        function test(){
-            let x = parseInt(document.getElementsByClassName("a")[0].value);
-            let y = parseInt(document.getElementsByClassName("b")[0].value);
-            let op = document.getElementsByClassName("op")[0].value
-            if(op == "add"){
-                console.log(x+y);
-                document.getElementById("ans").innerHTML = x+y;
-            }else if(op == "sus"){
-                console.log(x-y);
-                document.getElementById("ans").innerHTML = x-y;
-            }else if(op == "div"){
-                console.log(x/y);
-                document.getElementById("ans").innerHTML = x/y;
-            }else if(op == "mult"){
-                console.log(x*y);
-                document.getElementById("ans").innerHTML = x*y;
+        const x = document.getElementsByClassName('numsX')[0];
+        const y = document.getElementsByClassName('numsY')[0];
+        const ansX = document.getElementById('ansX');
+        const ansY = document.getElementById('ansY');
+        const ansOP = document.getElementById('ansOP');
+        const ans = document.getElementById('ans');
+        
+
+        x.addEventListener('input', updateX);
+        y.addEventListener('input', updateY);
+
+
+        function updateX(e){
+            ansX.textContent = e.target.value;
+        }
+
+        function updateY(e){
+            ansY.textContent = e.target.value;
+        }
+
+        function buttonClick(button_id){
+            var prev_active_button = document.getElementsByClassName("btn active")[0];
+            var current_button = document.getElementById(button_id);
+
+            prev_active_button.classList.remove("active");
+            current_button.classList.add("active");
+
+            updateOP(current_button.id);
+        }
+
+        function updateOP(op){
+            var possible = true;
+            var xv = x.value;
+            var yv = y.value
+            if (xv == "x"){
+                ansX.textContent = "x";
+                possible = false;
+            }else if(yv == "y"){
+                ansY.textContent = "y";
+                possible = false;
             }
-                        
+            if (op == "add"){ 
+                ansX.innerHTML = ansX.textContent;
+                ansOP.textContent = "+";
+                if(possible){
+                    ans.textContent = parseInt(xv, 10)+parseInt(yv, 10);
+                }
+            }else if(op =="sus"){
+                ansX.innerHTML = ansX.textContent;
+                ansOP.textContent = "-";
+                if(possible){
+                    ans.textContent = parseInt(xv, 10) - parseInt(yv, 10);
+                }
+            }else if(op =="div"){
+                ansX.innerHTML = ansX.textContent;
+                ansOP.textContent = "/";
+                if(possible){
+                    ans.textContent = parseInt(xv, 10)/parseInt(yv, 10);
+                }
+            }else if(op =="mult"){
+                ansX.innerHTML = ansX.textContent;
+                ansOP.textContent = "*";
+                if(possible){
+                    ans.textContent = parseInt(xv, 10)*parseInt(yv, 10);
+                }
+            }else if(op =="sqr"){
+                ansX.innerHTML = ansX.textContent;
+                ansOP.textContent = "^";
+                if(possible){
+                    ans.textContent = Math.pow(parseInt(xv, 10),parseInt(yv, 10));
+                }
+            }else if(op =="sqrt"){
+                ansX.innerHTML = ansX.textContent.sup();
+                ansOP.textContent = "√";
+                if(possible){
+                    ans.textContent = Math.sqrt(parseInt(xv, 10),parseInt(yv, 10));
+                }
+            }else if(op =="mod"){
+                ansX.innerHTML = ansX.textContent;
+                ansOP.textContent = "mod";
+                if(possible){
+                    ans.textContent = parseInt(xv, 10)%parseInt(yv, 10);
+                }
+            }
+            if(!possible){
+                ans.textContent = "";
+            }
         }
     </script>
 </html>

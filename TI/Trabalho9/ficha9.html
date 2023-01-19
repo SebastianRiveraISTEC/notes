@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+</body>
+</html>
+
+<script type="text/javascript">
+
+	function create_random_number(min, max){
+		return Math.floor(Math.random() * (max-min+1)) + min;
+	}
+
+	const nums_base = [];
+	const estrelas = [];
+
+	while(nums_base.length < 5){
+		let x = create_random_number(1, 50);
+		if(nums_base.includes(x)){
+			continue;
+		}else{
+			nums_base.push(x);
+		}
+	}
+
+	while(estrelas.length < 2){
+		let x = create_random_number(1, 12);
+		if(estrelas.includes(x)){
+			continue; 
+		}else{
+			estrelas.push(x);
+		}
+	}
+	var i = 0;
+	nums_base.sort((a,b) => a-b);
+	estrelas.sort((a,b) => a-b);
+	document.write(typeof estrelas[0]);
+
+	for(i=0; i<nums_base.length; i++){
+		document.write(nums_base[i] + " ");
+	}
+	document.write("<br>")
+	for(i=0; i<estrelas.length; i++){
+		document.write(estrelas[i] + " ");
+	}
+
+</script>

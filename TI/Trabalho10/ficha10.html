@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+</body>
+</html>
+
+<script type="text/javascript">
+
+	var entrada = prompt("Digite uma string");
+
+	const stack = []
+
+	var i;
+	for (i=0; i<entrada.length;i++){
+		stack.push(entrada[i]);
+	}
+
+	for (i=0; i<entrada.length;i++){
+		document.write(stack.pop());
+	}
+
+</script>

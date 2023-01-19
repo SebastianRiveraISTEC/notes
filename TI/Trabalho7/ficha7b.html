@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+</body>
+</html>
+
+<script type="text/javascript">
+
+	var x = prompt("String: ");
+
+	var a = 0;
+	var e = 0;
+	var i = 0;
+	var o = 0;
+	var u = 0;
+
+	for (var j = 0; j<x.length; j++){
+		if(x[j] == 'a'){
+			a++;
+		}else if(x[j] == 'e'){
+			e++;
+		}else if(x[j] == 'i'){
+			i++;
+		}else if(x[j] == 'o'){
+			o++;
+		}else if(x[j] == 'u'){
+			u++;
+		}
+	}
+	document.write("Ocorrências das Vogais:<br>")
+	document.write("Vogal a: "+  a + "<br>");
+	document.write("Vogal e: "+  e + "<br>");
+	document.write("Vogal i: "+  i + "<br>");
+	document.write("Vogal o: "+  o + "<br>");
+	document.write("Vogal u: "+  u + "<br>");
+
+</script>

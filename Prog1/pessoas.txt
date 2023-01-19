@@ -1,0 +1,4 @@
+maca 12 10
+banana 12 10
+leite 1 25
+ovos 4 5

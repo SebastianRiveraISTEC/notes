@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+</body>
+</html>
+
+<script type="text/javascript">
+
+	var x = prompt("String: ");
+
+	let a1 = false;
+	let primeiraA ;
+
+	document.write("1) a. ");
+	for (var i = 0; i < x.length; i++) {
+		if(x[i] == 'a' && !a1){
+			primeiraA = i;
+			a1 = true;
+		}
+		if(a1){
+			document.write(x[i]);
+		}
+	}
+
+	document.write("<br>1) b. ");
+
+	let a2 = true;
+	for (var i = 0; i < x.length; i++) {
+		if(x[i] == 'a'){
+			a2 = false;
+		}
+		if(a2){
+			document.write(x[i]);
+		}
+	}
+
+	document.write("<br>1) c.");
+	let a3 = false;
+	let segundaA;
+	for (var i = 0; i<x.length;i++){
+			if(x[i] == 'a'){
+				if(a3){
+				segundaA = i;
+				document.write(segundaA + "<br>");
+				break;
+				}else{
+					a3 = true;
+				}
+		}
+	}
+
+	document.write("1) d. ");
+	document.write("Indice primeira a: " + primeiraA + "<br>");
+	document.write("Indice segunda a: " + segundaA + "<br>");
+	document.write("Quantidade de carateres entre primeira a e segunda a " + (segundaA-primeiraA) + "<br>");
+
+</script>
