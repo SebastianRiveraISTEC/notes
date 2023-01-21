@@ -7,21 +7,36 @@
 
     <body>
         <div id="box">
+            <div class="form">
             <form>
                 <input type="number" class="numsX" placeholder="x" oninput="updateX">
                 <input type="number" class="numsY" placeholder="y" oninput="updateY">
             </form>
+            </div>
                 <div class="btn-group">
+                    <div class="btn-item">
                     <button id="add" onclick="buttonClick(this.id)" class = "btn active">+</button>
+                    </div>
+                    <div class="btn-item">
                     <button id="sus" onclick="buttonClick(this.id)" class = "btn">-</button>
+                    </div>
+                    <div class="btn-item">
                     <button id="div" onclick="buttonClick(this.id)" class = "btn">/</button>
+                    </div>
+                    <div class="btn-item">
                     <button id="mult" onclick="buttonClick(this.id)" class = "btn">*</button>
+                    </div>
+                    <div class="btn-item">
                     <button id="sqr" onclick="buttonClick(this.id)" class = "btn">^</button>
+                    </div>
+                    <div class="btn-item">
                     <button id="sqrt" onclick="buttonClick(this.id)" class = "btn">√</button>
+                    </div>
+                    <div class="btn-item">
                     <button id="mod" onclick="buttonClick(this.id)" class = "btn">mod</button>
-                <div>
+                    </div>
+                </div>
             <div class="ansBox">
-                <a>Resposta :</a>
                 <a id="ansX">x</a>
                 <a id="ansOP">_</a>
                 <a id="ansY">y</a>
@@ -31,12 +46,45 @@
         </div>
     </body>
     <style>
-        .box{
+        #box{
+        width: 400px;
+        height: 150px;
+        display: flex;
+        overflow: hidden;
+        padding: 15px;
+        align-items: center;
+
+        position: absolute;
+        top:0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        
+        margin: auto;
+        border: 3px solid black;
         }
-        .nums,.btn-group{
+        .form{
+            float: left;
+        }
+        .btn-group{
+            display: grid;
+            grid-template-areas: "button1 button2 button2"
+                                "button4 button5 button5"
+                                "button7 button7 button7";
+            gap: 10px;
         }
         .ansBox{
+            width: 30%;
+            padding-left: 10px;    
         }
+        .btn-item{
+            font-size: 24px;
+        }
+
+        .btn-item:nth-child(1) {
+            grid-area: button1;
+        }
+        input{box-sizing:border-box} 
     </style>
     <script>
         const x = document.getElementsByClassName('numsX')[0];
