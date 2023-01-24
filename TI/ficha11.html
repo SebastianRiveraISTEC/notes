@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    
+
+
+
+    <title>Querida Casinha</title>
+</head>
+<body>
+    <canvas id="myCanvas" width="1200" height="900"
+     style="border:1px solid black;">
+	<p>This browser does not support the <code>canvas</code> element.</p>
+    </canvas>
+
+</body>
+
+</html>
+<style>
+    body {
+			background: #dddddd;
+		}
+		#myCanvas {
+			background: #ffffff;
+			border: 1px solid #aaaaaa;
+		}
+</style>
+<script>
+    window.onload = function(){
+        var canvas = document.getElementById("myCanvas");	
+        var context = canvas.getContext("2d");
+        
+        // body
+        context.beginPath();
+        context.moveTo(350, 850); 
+		context.lineTo(850, 850);
+        context.lineTo(850, 500);
+        context.lineTo(350, 500);
+        context.lineTo(350, 850);
+        context.lineWidth = 2;
+        context.stroke();
+
+        // roof
+        context.beginPath();
+
+
+
+
+
+
+
+    }
+</script>

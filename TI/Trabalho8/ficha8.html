@@ -5,7 +5,7 @@
 </head>
 <body>
 	<div class="box">
-		<form name="form" method="post" onsubmit="return validate_form();">
+		<form name="form" method="post" onsubmit="return(validate_form());">
 
 			<input type="text" name="Nome" class="Pair" placeholder="Nome">
 			<input type="text" name="Morada" class="Pair" placeholder="Morada">
@@ -107,7 +107,7 @@
 
 			<input type="radio" name="Sexo">
 			<label>Outro</label><br>
-			<input type="button" value="Reset">
+			<input type="reset" value="Reset">
 			<input type="submit" value="Enviar">
 
 		</form>
@@ -148,7 +148,7 @@
 </style>
 <script type="text/javascript">
 
-	const calculateAge = (birthday) => {
+	function calculateAge(birthday){
 		const ageDifMs = Date.now() - new Date(birthday).getTime();
   		const ageDate = new Date(ageDifMs);
   		return Math.abs(ageDate.getUTCFullYear() - 1970);
@@ -157,31 +157,22 @@
 	function validateEmail(email) {
   		var re = /^\S+@\S+\.\S+$/;
   		return re.test(email);
-}
+	}
 
 	function validate_form(){
 		var name = document.form.Nome.value;
 		var address = document.form.Morada.value;
 		var city = document.form.Localidade.value;
 		var phone = document.form.Telemovel.value;
-
 		var email = document.form.Correio.value;
-		var atposition=email.indexOf("@");
-		var dotposition=email.lastIndexOf(".");
 
 		var birth_day = document.form.Dia.value;
 		var birth_month = document.form.Mes.value;
 		var birth_year = document.form.Ano.value;
-
 		var birthday = birth_year+"-"+birth_month+"-"+birth_day;
 		var age = calculateAge(birthday);
 
-		var sex = document.form.Ano.value;
-
-		console.log("ATPOSITION: " + atposition);
-		console.log("DOTPOSITION: " + dotposition);
-		console.log(age);
-
+		var sex = document.form.Sexo.value;
 
 		if(name == null || name == ""){
 			alert("Nome invalido");
@@ -195,23 +186,20 @@
 			alert("Localidade invalida");
 			console.log("CITY ERROR");
 			return false;
-		}else if(phone == null || phone == "" || phone.length != 9 || isNaN(num)){
-			alert("Telemovel invalido");
-			console.log("PHONE ERROR");
-			console.log("email: " + email);
-			console.log("validate mail: "+validateEmail(email));
-			console.log( "condition: " +(email == null || email == "" || !validateEmail(email)))
-			return false;
-		}else if(email == null || email == "" || !validateEmail(email)){
+		}else if(email == null || email == "" || validateEmail(email) == false){
 			alert("Correio invalido");
 			console.log("MAIL ERROR");
 			return false;
-		}else if(age < 18 || age == null){
+		}else if(phone == null || phone == "" || phone.length != 9 ){
+			alert("Telemovel invalido");
+			console.log("PHONE ERROR");
+			return false;
+		}else if(age < 18 || age == null ){
 			alert("Idade menor a 18");
 			console.log("AGE ERROR");
 			return false;
 		}else if(sex == null || sex == ""){
-			alert("Select a sex");
+			alert("Selecione um género");
 			console.log("SEX ERROR");
 			return false;
 		}
