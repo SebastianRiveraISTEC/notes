@@ -70,4 +70,52 @@ b)
 $$
 \left[\begin{array}{@{}cc|c@{}} 1&3&2\\1&4&3 \end{array}\right] = \left[\begin{array}{@{}cc|c@{}} 1&3&2\\0&1&1 \end{array}\right] = \left[\begin{array}{@{}cc|c@{}} 1&3&2\\0&3&3 \end{array}\right] = \left[\begin{array}{@{}cc|c@{}} 1&0&-1\\0&1&1 \end{array}\right]
 $$
- 
+
+
+### Continuação
+
+| x    | y    |
+| ---- | ---- |
+| 3    | 2    |
+| 4    | 3    |
+| 2    | 2    |
+
+a) Escrever o sistema de equações
+
+b) Escrever forma matricial
+
+c) a traves da forma matricial, determinar os parametros a e b
+
+
+
+a)
+
+a + bx = y
+$$
+a+3b = 2\\
+a+4b = 3\\
+a+2b = 2
+$$
+
+
+
+
+b)
+
+XB = Y
+$$
+\begin{bmatrix} 1 && 3 \\1 && 4\\ 1 && 2 \end{bmatrix}.\begin{bmatrix}a\\b \end{bmatrix} = \begin{bmatrix} 2\\3\\2\end{bmatrix}
+$$
+c) Temos de convertir X em uma matriz cuadrada (minimos cuadrados)
+$(X' . X)B = X' B$
+$$
+X' = \begin{bmatrix}1&1&1\\3&4&2\end{bmatrix}\\
+X'.X = \begin{bmatrix}3&9\\9&29\end{bmatrix}\\
+X'.Y = \begin{bmatrix}7\\22\end{bmatrix}
+$$
+
+
+$$
+\left[\begin{array}{@{}cc|c@{}} 3&9&7\\9&29&22\end{array}\right] = \left[\begin{array}{@{}cc|c@{}} 3&9&7\\0&2&1\end{array}\right] = \left[\begin{array}{@{}cc|c@{}} 3&0&2.5\\0&2&1\end{array}\right] = \left[\begin{array}{@{}cc|c@{}} 1&0&\frac{2.5}{3}\\0&1&0.5\end{array}\right]
+$$
+

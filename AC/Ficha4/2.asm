@@ -1,53 +1,47 @@
+#make_COM#
 
+ORG 100H
 
-base db 'estamos perto do natal$'
+.Data
 
+base db "estamos perto de natal$"
 nova db 40 dup(?)
 
-
 inicio:
-
-	.Code
-	
-    lea si, base
-    
-    lea di, nova
+lea si, base
+lea di, nova
 
 l1:
+mov al, [si]
 
-    mov al, [si]
-    
-    cmp al, '$'
-    jz fim1
+cmp al, '$'
+jz fim1
 
-    cmp al, ' '
-    jz l2
+cmp al, ' '
+jz l2
 
-    mov [di], al
-    
-    inc si
-    inc di
-    jmp l1
+mov [di], al
+
+inc si
+inc di
+jmp l1
 
 l2:
-
-	mov [di], '#'
-	inc di
-	mov [di], '#'
-	jmp l1
-	inc di
+mov [di], '#'
+inc di
+mov [di], '#'
+inc di
+inc si
+jmp l1
 
 fim1:
-	
-	mov al, '$'
-    mov [di], al
+mov al, '$'
+mov [di], al
 
-    lea dx, nova
-    
-    mov ah, 9
-    int 21H
+lea dx, nova
+mov ah, 9
+INT 21H
 
 fim2:
-
-	MOV AH, 4CH
-    INT 21h
+mov ah, 4CH
+INT 21H

@@ -1,42 +1,36 @@
-msg db 'o rui amigoda praia$'
+#make_COM#
+ORG 100H
 
-                                                                      
-; Area de codigo (instrucoes/comandos)
+.Data
+msg db "O rui amigo da praia$"
 
-inicio:
-
-	.Code
-	
-    lea si, msg
+.Code
+lea si, msg
 
 l1:
+mov al, [si]
+cmp al, 'g'
+jz l2
 
-	mov al, [si]
-	
-	cmp al, 'g'
-	jz l2
+cmp al, '$'
+jz fim
 
-
-	cmp al, '$'
-	jz fim
-
-	inc si 
-    jmp l1
+inc si
+jmp l1
 
 l2:
-	cmp al, '$'
-	jz fim
+cmp al, '$'
+jz fim
 
-	mov DL, al
-    mov AH, 2H
-    INT 21H
+mov dl, al
+mov AH, 2H
+INT 21H
 
-	inc si
-	jmp l2
+inc si
+mov al, [si]
 
+jmp l2
 
-fim: 
-
-    MOV AH, 4CH
-    
-    INT 21h
+fim:
+mov AH, 4CH
+INT 21H
