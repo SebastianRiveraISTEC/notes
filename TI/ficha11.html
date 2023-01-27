@@ -32,24 +32,233 @@
         var canvas = document.getElementById("myCanvas");	
         var context = canvas.getContext("2d");
         
-        // body
+        function getCursorPosition(canvas, event) {
+            const rect = canvas.getBoundingClientRect()
+            const x = event.clientX - rect.left
+            const y = event.clientY - rect.top
+            console.log("x: " + x + " y: " + y)
+        }
+
+        canvas.addEventListener('mousedown', function(e) {
+            getCursorPosition(canvas, e)
+        })
+
+        // base
         context.beginPath();
-        context.moveTo(350, 850); 
-		context.lineTo(850, 850);
-        context.lineTo(850, 500);
-        context.lineTo(350, 500);
-        context.lineTo(350, 850);
+        context.moveTo(411, 216); 
+        context.lineTo(824, 161);
+        context.lineTo(819, 169);
+        context.lineTo(405, 223);
+        context.lineTo(411, 216);
+
+        context.moveTo(405, 223);
+        context.lineTo(418, 239);
+        context.lineTo(832, 197);
+        context.lineTo(819, 169);            
+
+        context.moveTo(824, 161);
+        context.lineTo(1001, 440);
+        context.lineTo(995, 446);
+        context.lineTo(838, 206);
+        context.lineTo(600, 504);
+        context.lineTo(250, 418);
+        context.lineTo(246, 412);
+        context.lineTo(299, 356);
+
+        context.moveTo(360, 296);
+        context.lineTo(418, 239);
+
+        context.moveTo(832, 197);
+        context.lineTo(592, 495);
+        context.lineTo(246, 412);
+
+        context.moveTo(289, 396);
+        context.lineTo(316, 300);
+        context.lineTo(428, 298);
+        context.lineTo(362, 411);
+        context.lineTo(316, 300);
+        context.moveTo(362, 411);
+        context.lineTo(289, 396);
+
+        context.moveTo(299, 385);
+        context.lineTo(320, 318);
+        context.lineTo(350, 395);
+        context.lineTo(299, 385);
+
+        context.lineTo(312, 384);
+        context.lineTo(330, 343);
+
+        context.moveTo(412, 421);
+        context.lineTo(463, 299);
+        context.lineTo(598, 299);
+        context.lineTo(533, 445);
+        context.lineTo(463, 299);
+        context.moveTo(533, 445);
+        context.lineTo(412, 421);
+
+        context.moveTo(422, 410);
+        context.lineTo(463, 320);
+        context.lineTo(515, 429);
+        context.lineTo(422, 410);
+        context.lineTo(428, 411);
+        context.lineTo(449, 409);
+        context.lineTo(474, 353);
+
+        context.moveTo(702, 377);
+        context.lineTo(770, 374);
+        context.lineTo(741, 328);
+        context.moveTo(758, 374);
+        context.lineTo(733, 339);
+
+        context.moveTo(813, 372);
+        context.lineTo(875, 368);
+        context.lineTo(849, 324);
+        context.lineTo(813, 372);
+        context.moveTo(861, 368);
+        context.lineTo(843, 335);
+
+        context.moveTo(648, 446);
+        context.lineTo(937, 412);
+        context.lineTo(974, 415);
+        context.moveTo(937, 412);
+        context.lineTo(816, 236);
+
+        context.moveTo(838, 206);
+        context.lineTo(846, 195);
+
+        context.moveTo(995, 446);
+        context.lineTo(915, 435);
+
+        context.moveTo(914, 417);
+        context.lineTo(905, 619);
+        context.lineTo(582, 723);
+        context.lineTo(580, 503);
+
+        context.moveTo(583, 729);
+        context.lineTo(582, 724);
+
+        context.moveTo(912, 483);
+        context.lineTo(581, 545);
+
+        context.moveTo(582, 730);
+        context.lineTo(913, 622);
+        context.lineTo(905, 619);
+
+        context.moveTo(623, 651);
+        context.lineTo(728, 622);
+        context.lineTo(729, 551);
+        context.lineTo(622, 573);
+        context.lineTo(623, 651);
+
+        context.moveTo(655, 640);
+        context.lineTo(654, 567);
+
+        context.moveTo(692, 631);
+        context.lineTo(693, 559);
+
+        context.moveTo(842, 563);
+        context.lineTo(882, 553);
+        context.lineTo(883, 516);
+        context.lineTo(843, 525);
+        context.lineTo(842, 563);
+
+        context.moveTo(863, 558);
+        context.lineTo(863, 520);
+        context.moveTo(842, 544);
+        context.lineTo(882, 536);
+
+        context.moveTo(583, 729);
+        context.lineTo(580, 731);
+        context.lineTo(304, 579);
+        context.lineTo(311, 576);
+        context.lineTo(582, 722);
+
+        context.moveTo(580, 545);
+        context.lineTo(303, 460);
+
+        context.moveTo(311, 576);
+        context.lineTo(302, 432);
+
+        context.moveTo(330, 553);
+        context.lineTo(328, 502);
+        context.lineTo(371, 515);
+        context.lineTo(372, 571);
+        context.lineTo(330, 553);
+
+        context.moveTo(350, 560);
+        context.lineTo(349, 508);
+
+        context.moveTo(411, 584);
+        context.lineTo(468, 607);
+        context.lineTo(464, 543);
+        context.lineTo(409, 523);
+        context.lineTo(411, 584);
+
+        context.moveTo(437, 596);
+        context.lineTo(435, 533);
+
+        context.moveTo(511, 683);
+        context.lineTo(508, 551);
+        context.lineTo(552, 565);
+        context.lineTo(553, 707);
+
+        context.moveTo(514, 619);
+        context.lineTo(513, 563);
+        context.lineTo(528, 567);
+        context.lineTo(528, 623);
+        context.lineTo(514, 619);
+
+        context.moveTo(533, 627);
+        context.lineTo(532, 569);
+        context.lineTo(547, 573);
+        context.lineTo(547, 631);
+        context.lineTo(533, 627);
+        
+        context.moveTo(913, 648);
+        context.lineTo(582, 763);
+        context.lineTo(576, 763);
+        context.lineTo(524, 778);
+        context.lineTo(426, 716);
+        context.lineTo(427, 705);
+        context.lineTo(452, 696);
+        context.lineTo(454, 688);
+        context.lineTo(303, 601);
+        context.lineTo(304, 578);
+
+        context.moveTo(454, 688);
+        context.lineTo(477, 684);
+        context.lineTo(575, 740);
+        context.lineTo(552, 747);
+        context.lineTo(454, 688);
+
+        context.moveTo(552, 747);
+        context.lineTo(552, 755);
+        context.lineTo(451, 697);
+
+        context.moveTo(552, 755);
+        context.lineTo(552, 769);
+
+        context.moveTo(577, 763);
+        context.lineTo(577, 742);
+
+        context.moveTo(552, 755);
+        context.lineTo(523, 764);
+        context.lineTo(429, 703);
+        context.moveTo(524, 763);
+        context.lineTo(524, 779);
+
+        context.moveTo(914, 622);
+        context.lineTo(913, 647);   
+        
         context.lineWidth = 2;
         context.stroke();
 
-        // roof
         context.beginPath();
+        context.arc(795, 293, 32, 1.5*Math.PI, Math.PI*0.92, false);
+        context.lineWidth = 2;
+        context.stroke();
+        
 
-
-
-
-
-
-
+        
     }
 </script>
