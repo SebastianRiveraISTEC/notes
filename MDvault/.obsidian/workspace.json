@@ -25,26 +25,50 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Test.md",
+                "file": "Summary Redes.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "f6d85aad6544c2f3",
+            "id": "71b9fbb941c1f0d4",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README (1).md",
+                "file": "Summary Math I.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "a4b98a8fb5abf2fa",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Summary Program1.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "ea3eb4f6f642f7f9",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Summary AC.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 2
+        "currentTab": 4
       }
     ],
     "direction": "vertical"
@@ -86,8 +110,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "c47b0babfed516e1",
@@ -103,7 +126,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "README (1).md",
+                "file": "Summary AC.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -120,7 +143,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "README (1).md",
+                "file": "Summary AC.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -143,7 +166,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README (1).md"
+                "file": "Summary AC.md"
               }
             }
           },
@@ -168,7 +191,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
+    "width": 200,
     "collapsed": true
   },
   "left-ribbon": {
@@ -182,17 +205,17 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "f6d85aad6544c2f3",
+  "active": "ea3eb4f6f642f7f9",
   "lastOpenFiles": [
-    "Untitled.md",
+    "Summary Program1.md",
+    "05 - White red.md",
+    "06 - Yellow cab.md",
+    "README (1).md",
+    "Summary Math I.md",
+    "Summary Redes.md",
     "Test.md",
     "AC/Ficha 2.md",
     "AC/Ficha1.md",
-    "Matematicas/24-nov.md",
-    "Matematicas/Aula2.md",
-    "Matematicas/10-nov.md",
-    "Matematicas/17-nov.md",
-    "01-12-22.md",
-    "02-12-22.md"
+    "Matematicas/24-nov.md"
   ]
 }
