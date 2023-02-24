@@ -20,7 +20,7 @@
             }
           },
           {
-            "id": "4f08f22b06d2dfd5",
+            "id": "ea3eb4f6f642f7f9",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -32,43 +32,31 @@
             }
           },
           {
-            "id": "71b9fbb941c1f0d4",
+            "id": "7b5611a5d776c8ad",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Summary Math I.md",
+                "file": "Apontamentos  Aula Duvidas Redes.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "a4b98a8fb5abf2fa",
+            "id": "2d0097ddb9e8f60d",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Summary Program1.md",
-                "mode": "source",
-                "source": false
-              }
-            }
-          },
-          {
-            "id": "ea3eb4f6f642f7f9",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Summary AC.md",
+                "file": "Summary TI.md",
                 "mode": "source",
                 "source": false
               }
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -126,7 +114,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Summary AC.md",
+                "file": "Summary TI.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -143,7 +131,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Summary AC.md",
+                "file": "Summary TI.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -166,7 +154,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Summary AC.md"
+                "file": "Summary TI.md"
               }
             }
           },
@@ -205,17 +193,17 @@
       "workspaces:Manage workspace layouts": false
     }
   },
-  "active": "ea3eb4f6f642f7f9",
+  "active": "2d0097ddb9e8f60d",
   "lastOpenFiles": [
+    "Apontamentos  Aula Duvidas Redes.md",
+    "Summary Redes.md",
+    "Test.md",
+    "Summary Math I.md",
     "Summary Program1.md",
+    "Summary AC.md",
     "05 - White red.md",
     "06 - Yellow cab.md",
     "README (1).md",
-    "Summary Math I.md",
-    "Summary Redes.md",
-    "Test.md",
-    "AC/Ficha 2.md",
-    "AC/Ficha1.md",
-    "Matematicas/24-nov.md"
+    "AC/Ficha 2.md"
   ]
 }
