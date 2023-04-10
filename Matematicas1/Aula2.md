@@ -140,5 +140,3 @@ log(\bar{X}_G) = \frac{1}{N}\sum_{i=1}^{N}log(X_i)\\
 \because log(\prod_{i=1}^{n}x_i )=\sum_{n=1}^{n}log(x_n)
 $$
 
-
-Ex. 

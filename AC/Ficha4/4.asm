@@ -118,3 +118,6 @@ mov [di], al
 lea dx, semAna
 mov ah,9
 int 21h
+
+mov ah, 4CH
+int 21h
